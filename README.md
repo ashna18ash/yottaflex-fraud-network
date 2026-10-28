@@ -1,8 +1,29 @@
-# YottaFlex Fraud Network Investigation System
+﻿# YottaFlex Fraud Network Investigation System
 
-An end-to-end synthetic insurance fraud investigation system designed to identify suspicious claim networks rather than relying only on isolated claim-level rules.
+> **From isolated claims to connected evidence.**
 
-The system generates relational insurance data, plants controlled suspicious patterns, validates data integrity, detects fraud indicators, builds relationship-network evidence, scores risk, prioritizes investigations, and evaluates detection performance against a separate ground-truth dataset.
+An end-to-end synthetic insurance fraud investigation system built to answer a practical question:
+
+**What looks normal when viewed claim-by-claim, but suspicious when the relationships between people, policies, incidents, providers, invoices, and payments are examined together?**
+
+This project generates a reproducible insurance-like dataset, plants controlled suspicious patterns, validates the resulting data, detects risk signals, builds a relationship network, ranks investigation candidates, and evaluates the results against a separate ground-truth dataset.
+
+The goal is not to declare someone "fraudulent".  
+The goal is to give an investigator **evidence, context, and a prioritized place to start.**
+---
+
+## Why this project
+
+A useful fraud investigation system should connect the dots rather than depend on a single suspicious field.
+
+This implementation deliberately combines:
+
+- **Relational evidence** ? valid links between claimants, policies, claims, incidents, providers, invoices, and payments.
+- **Behavioral signals** ? shared contacts, repeated narratives, unusual timing, and provider concentration.
+- **Network context** ? relationships can reveal patterns that isolated rules may miss.
+- **Investigation prioritization** ? risk scores are used to decide what deserves attention first.
+- **Reproducibility** ? the same seed produces the same dataset and evaluation outputs.
+- **False-positive awareness** ? benign shared attributes are included so that one common detail is not automatically treated as proof of fraud.
 
 ---
 
@@ -126,22 +147,26 @@ Providers	500
 Relationship edges	8,000
 
 
-During development and verification, a smaller dataset was used to validate the complete pipeline before scaling.
+The final verified execution uses the challenge-scale synthetic baseline:
 
-Current verified development execution:
-Entity / Dataset	Current Verified Run
-Claimants	100
-Policies	100
-Claims	250
-Incidents	250
-Providers	50
-Relationship edges	400
+| Entity / Dataset | Final Verified Run |
+|---|---:|
+| Claimants | 2,000 |
+| Policies | 2,000 |
+| Claims | 5,000 |
+| Incidents | 5,000 |
+| Providers | 500 |
+| Invoices | 5,000 |
+| Payments | 5,000 |
+| Relationship edges | 8,000 |
+
+The generator uses a fixed random seed for reproducibility.
 
 
 The generator uses a fixed random seed for reproducibility.
 6. Controlled Fraud Patterns
 The generator intentionally plants four suspicious patterns.
-NET-001 — Shared Contact
+NET-001 â€” Shared Contact
 Five suspicious claims are associated with claimants sharing controlled contact information.
 
 Evidence includes:
@@ -149,15 +174,15 @@ Evidence includes:
 - Shared email address
 - Multiple distinct claimants
 This is intended to simulate a possible coordinated claimant network.
-NET-002 — Repeated Narrative
+NET-002 â€” Repeated Narrative
 Five suspicious claims use the same incident narrative across multiple claimants.
 
 This simulates repeated or potentially coordinated descriptions of incidents.
-NET-003 — Unusual Timing
+NET-003 â€” Unusual Timing
 Five suspicious claims are placed within a controlled short time period.
 
 The detector searches for unusually dense claim activity involving multiple claimants.
-NET-004 — Provider Concentration
+NET-004 â€” Provider Concentration
 Ten suspicious claims are associated with the same provider.
 
 This simulates an unusual concentration of claims around a provider.
@@ -272,10 +297,10 @@ Missed planted claims:     0
 
 Pattern-Level Detection
 Pattern	Detection
-Provider Concentration	10/10 — 100%
-Repeated Narrative	5/5 — 100%
-Shared Contact	5/5 — 100%
-Unusual Timing	5/5 — 100%
+Provider Concentration	10/10 â€” 100%
+Repeated Narrative	5/5 â€” 100%
+Shared Contact	5/5 â€” 100%
+Unusual Timing	5/5 â€” 100%
 
 
 Ranking Performance
@@ -302,62 +327,62 @@ Therefore, conventional precision, false-positive rate, and F1 should not be int
 Automated tests are included under the tests/ directory.
 
 Latest test execution:
-13 passed in 1.52s
+13 passed in 5.21s
 
 Run:
 pytest -q
 
 15. Project Structure
 yottaflex-fraud-network/
-│
-├── app/
-│   ├── api.py
-│   ├── dashboard.py
-│   │
-│   ├── core/
-│   │   ├── config.py
-│   │   └── database.py
-│   │
-│   ├── generation/
-│   │   ├── master_data.py
-│   │   ├── transactions.py
-│   │   └── anomalies.py
-│   │
-│   ├── validation/
-│   │   └── validator.py
-│   │
-│   ├── detection/
-│   │   ├── rules.py
-│   │   ├── network.py
-│   │   ├── scoring.py
-│   │   └── evaluation.py
-│   │
-│   └── investigation/
-│       └── investigator.py
-│
-├── data/
-│   ├── generated/
-│   ├── input/
-│   └── ground_truth/
-│
-├── database/
-│
-├── docs/
-│   ├── data_dictionary.md
-│   ├── architecture.md
-│   └── assumptions.md
-│
-├── prompts/
-│   └── prompt_history.md
-│
-├── tests/
-│
-├── requirements.txt
-├── README.md
-├── run.py
-├── create_tables.py
-├── check_tables.py
-└── .gitignore
+â”‚
+â”œâ”€â”€ app/
+â”‚   â”œâ”€â”€ api.py
+â”‚   â”œâ”€â”€ dashboard.py
+â”‚   â”‚
+â”‚   â”œâ”€â”€ core/
+â”‚   â”‚   â”œâ”€â”€ config.py
+â”‚   â”‚   â””â”€â”€ database.py
+â”‚   â”‚
+â”‚   â”œâ”€â”€ generation/
+â”‚   â”‚   â”œâ”€â”€ master_data.py
+â”‚   â”‚   â”œâ”€â”€ transactions.py
+â”‚   â”‚   â””â”€â”€ anomalies.py
+â”‚   â”‚
+â”‚   â”œâ”€â”€ validation/
+â”‚   â”‚   â””â”€â”€ validator.py
+â”‚   â”‚
+â”‚   â”œâ”€â”€ detection/
+â”‚   â”‚   â”œâ”€â”€ rules.py
+â”‚   â”‚   â”œâ”€â”€ network.py
+â”‚   â”‚   â”œâ”€â”€ scoring.py
+â”‚   â”‚   â””â”€â”€ evaluation.py
+â”‚   â”‚
+â”‚   â””â”€â”€ investigation/
+â”‚       â””â”€â”€ investigator.py
+â”‚
+â”œâ”€â”€ data/
+â”‚   â”œâ”€â”€ generated/
+â”‚   â”œâ”€â”€ input/
+â”‚   â””â”€â”€ ground_truth/
+â”‚
+â”œâ”€â”€ database/
+â”‚
+â”œâ”€â”€ docs/
+â”‚   â”œâ”€â”€ data_dictionary.md
+â”‚   â”œâ”€â”€ architecture.md
+â”‚   â””â”€â”€ assumptions.md
+â”‚
+â”œâ”€â”€ prompts/
+â”‚   â””â”€â”€ prompt_history.md
+â”‚
+â”œâ”€â”€ tests/
+â”‚
+â”œâ”€â”€ requirements.txt
+â”œâ”€â”€ README.md
+â”œâ”€â”€ run.py
+â”œâ”€â”€ create_tables.py
+â”œâ”€â”€ check_tables.py
+â””â”€â”€ .gitignore
 
 16. Installation
 Python 3.10+ is recommended.
