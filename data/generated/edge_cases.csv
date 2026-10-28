@@ -1,0 +1,6 @@
+edge_case_id,edge_case_type,entity_type,entity_id,expected_result,description,evidence
+EDGE-001,NONEXISTENT_POLICY,CLAIM,CLM-EDGE-000001,VALIDATION_ERROR,"Synthetic claim intentionally references POL-999999, which does not exist.",policy_id=POL-999999
+EDGE-002,PAYMENT_EXCEEDS_APPROVED,PAYMENT,PAY-EDGE-000001,FRAUD_INDICATOR,Payment intentionally exceeds the approved claim amount.,claim_id=CLM-2026-000001; approved_amount=242966.11; payment_amount=247966.11
+EDGE-003,DUPLICATE_INVOICE,INVOICE,INV-EDGE-000001,FRAUD_INDICATOR,Same invoice is intentionally reused across different claimants.,original_claim=CLM-2026-000001; original_claimant=CLMNT-000005; second_claimant=CLMNT-000001; invoice_id=INV-PRV-PRV-000013-000001
+EDGE-004,MISSING_RELATIONSHIP_EDGE,RELATIONSHIP,REL-EDGE-000001,NETWORK_GAP,A known synthetic relationship is intentionally omitted from relationship_edges.csv.,"Ground truth contains the relationship, but relationship_edges.csv does not."
+EDGE-005,BENIGN_SHARED_ADDRESS,CLAIMANT,"CLMNT-000021,CLMNT-000022,CLMNT-000023",BENIGN,Multiple claimants share an address representing a legitimate household.,"shared_address=25 Example Family Street, Hyderabad; claimant_count=3"

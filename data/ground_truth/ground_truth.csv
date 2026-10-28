@@ -1,0 +1,26 @@
+network_id,claim_id,claimant_id,provider_id,pattern_type,description
+NET-001,CLM-2026-000001,CLMNT-000136,PRV-000076,SHARED_CONTACT,Multiple claimants share the same phone number and email address.
+NET-001,CLM-2026-000002,CLMNT-000036,PRV-000129,SHARED_CONTACT,Multiple claimants share the same phone number and email address.
+NET-001,CLM-2026-000003,CLMNT-001489,PRV-000182,SHARED_CONTACT,Multiple claimants share the same phone number and email address.
+NET-001,CLM-2026-000004,CLMNT-000851,PRV-000235,SHARED_CONTACT,Multiple claimants share the same phone number and email address.
+NET-001,CLM-2026-000005,CLMNT-000871,PRV-000288,SHARED_CONTACT,Multiple claimants share the same phone number and email address.
+NET-002,CLM-2026-000006,CLMNT-000383,PRV-000341,REPEATED_NARRATIVE,Multiple claims contain the same incident narrative.
+NET-002,CLM-2026-000007,CLMNT-000564,PRV-000394,REPEATED_NARRATIVE,Multiple claims contain the same incident narrative.
+NET-002,CLM-2026-000008,CLMNT-000725,PRV-000447,REPEATED_NARRATIVE,Multiple claims contain the same incident narrative.
+NET-002,CLM-2026-000009,CLMNT-001682,PRV-000500,REPEATED_NARRATIVE,Multiple claims contain the same incident narrative.
+NET-002,CLM-2026-000010,CLMNT-000140,PRV-000053,REPEATED_NARRATIVE,Multiple claims contain the same incident narrative.
+NET-003,CLM-2026-000011,CLMNT-000671,PRV-000106,UNUSUAL_TIMING,Multiple claims occur within a short consecutive time window.
+NET-003,CLM-2026-000012,CLMNT-000442,PRV-000159,UNUSUAL_TIMING,Multiple claims occur within a short consecutive time window.
+NET-003,CLM-2026-000013,CLMNT-001574,PRV-000212,UNUSUAL_TIMING,Multiple claims occur within a short consecutive time window.
+NET-003,CLM-2026-000014,CLMNT-000551,PRV-000265,UNUSUAL_TIMING,Multiple claims occur within a short consecutive time window.
+NET-003,CLM-2026-000015,CLMNT-000704,PRV-000318,UNUSUAL_TIMING,Multiple claims occur within a short consecutive time window.
+NET-004,CLM-2026-000016,CLMNT-001895,PRV-000001,PROVIDER_CONCENTRATION,A single provider is associated with an unusually high number of claims.
+NET-004,CLM-2026-000017,CLMNT-000402,PRV-000001,PROVIDER_CONCENTRATION,A single provider is associated with an unusually high number of claims.
+NET-004,CLM-2026-000018,CLMNT-001986,PRV-000001,PROVIDER_CONCENTRATION,A single provider is associated with an unusually high number of claims.
+NET-004,CLM-2026-000019,CLMNT-000103,PRV-000001,PROVIDER_CONCENTRATION,A single provider is associated with an unusually high number of claims.
+NET-004,CLM-2026-000020,CLMNT-000499,PRV-000001,PROVIDER_CONCENTRATION,A single provider is associated with an unusually high number of claims.
+NET-004,CLM-2026-000021,CLMNT-001873,PRV-000001,PROVIDER_CONCENTRATION,A single provider is associated with an unusually high number of claims.
+NET-004,CLM-2026-000022,CLMNT-001214,PRV-000001,PROVIDER_CONCENTRATION,A single provider is associated with an unusually high number of claims.
+NET-004,CLM-2026-000023,CLMNT-001199,PRV-000001,PROVIDER_CONCENTRATION,A single provider is associated with an unusually high number of claims.
+NET-004,CLM-2026-000024,CLMNT-000245,PRV-000001,PROVIDER_CONCENTRATION,A single provider is associated with an unusually high number of claims.
+NET-004,CLM-2026-000025,CLMNT-000279,PRV-000001,PROVIDER_CONCENTRATION,A single provider is associated with an unusually high number of claims.

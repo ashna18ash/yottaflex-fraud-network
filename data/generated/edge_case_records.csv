@@ -1,0 +1,6 @@
+edge_case_id,event_type,entity_type,entity_id,claim_id,field_name,original_value,new_value,expected_result,description,related_claimant_id
+EDGE-001,INVALID_FOREIGN_KEY,CLAIM,CLM-EDGE-000001,CLM-EDGE-000001,policy_id,POL-999999,,VALIDATION_ERROR,Synthetic claim references a policy ID that does not exist.,
+EDGE-002,INVALID_PAYMENT,PAYMENT,PAY-EDGE-000001,CLM-2026-000001,payment_amount,242966.11,247966.11,FRAUD_INDICATOR,Payment intentionally exceeds the approved claim amount.,
+EDGE-003,DUPLICATE_INVOICE,INVOICE,INV-EDGE-000001,CLM-2026-000001,invoice_id,INV-PRV-PRV-000013-000001,INV-PRV-PRV-000013-000001,FRAUD_INDICATOR,The same invoice is intentionally reused for a different claimant to simulate duplicate billing.,CLMNT-000001
+EDGE-004,MISSING_RELATIONSHIP,RELATIONSHIP,REL-EDGE-000001,,relationship_edge,KNOWN_GROUND_TRUTH_RELATIONSHIP,,NETWORK_GAP,A known relationship exists in ground truth but is intentionally absent from the relationship edge dataset.,
+EDGE-005,BENIGN_SHARED_ATTRIBUTE,CLAIMANT,"CLMNT-000021,CLMNT-000022,CLMNT-000023",,address,"25 Example Family Street, Hyderabad","25 Example Family Street, Hyderabad",BENIGN,Multiple claimants share an address representing a legitimate household. Shared address alone must not be treated as proof of fraud.,

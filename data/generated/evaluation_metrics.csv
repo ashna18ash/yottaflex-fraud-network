@@ -1,0 +1,17 @@
+metric,pattern_type,k,value,count,total
+planted_claim_count,,,25,25,25
+planted_claims_detected,,,25,25,25
+planted_detection_recall,,,1.0,25,25
+recall_at_k,,5,0.2,5,25
+recall_at_k,,10,0.2,5,25
+recall_at_k,,20,0.2,5,25
+recall_at_k,,25,0.2,5,25
+recall_at_k,,50,0.88,22,25
+pattern_recall,PROVIDER_CONCENTRATION,,1.0,10,10
+pattern_recall,REPEATED_NARRATIVE,,1.0,5,5
+pattern_recall,SHARED_CONTACT,,1.0,5,5
+pattern_recall,UNUSUAL_TIMING,,1.0,5,5
+investigation_candidates,,,68,68,
+investigation_recall,,,1.0,25,25
+planted_case_coverage_ratio,,,0.36764705882352944,25,68
+evaluation_note,,,Unlabeled claims are not assumed benign; precision/FPR/F1 are therefore not interpreted as real-world classification metrics.,,

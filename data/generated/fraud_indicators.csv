@@ -1,0 +1,71 @@
+claim_id,indicator_type,severity,score,evidence
+CLM-2026-000001,SHARED_CONTACT,HIGH,30,Phone number shared by 5 claimants: +919999999999
+CLM-2026-000002,SHARED_CONTACT,HIGH,30,Phone number shared by 5 claimants: +919999999999
+CLM-2026-000003,SHARED_CONTACT,HIGH,30,Phone number shared by 5 claimants: +919999999999
+CLM-2026-000004,SHARED_CONTACT,HIGH,30,Phone number shared by 5 claimants: +919999999999
+CLM-2026-000005,SHARED_CONTACT,HIGH,30,Phone number shared by 5 claimants: +919999999999
+CLM-2026-000259,SHARED_CONTACT,HIGH,30,Phone number shared by 5 claimants: +919999999999
+CLM-2026-000613,SHARED_CONTACT,HIGH,30,Phone number shared by 5 claimants: +919999999999
+CLM-2026-001216,SHARED_CONTACT,HIGH,30,Phone number shared by 5 claimants: +919999999999
+CLM-2026-001264,SHARED_CONTACT,HIGH,30,Phone number shared by 5 claimants: +919999999999
+CLM-2026-001459,SHARED_CONTACT,HIGH,30,Phone number shared by 5 claimants: +919999999999
+CLM-2026-001617,SHARED_CONTACT,HIGH,30,Phone number shared by 5 claimants: +919999999999
+CLM-2026-001650,SHARED_CONTACT,HIGH,30,Phone number shared by 5 claimants: +919999999999
+CLM-2026-001696,SHARED_CONTACT,HIGH,30,Phone number shared by 5 claimants: +919999999999
+CLM-2026-002001,SHARED_CONTACT,HIGH,30,Phone number shared by 5 claimants: +919999999999
+CLM-2026-002002,SHARED_CONTACT,HIGH,30,Phone number shared by 5 claimants: +919999999999
+CLM-2026-002003,SHARED_CONTACT,HIGH,30,Phone number shared by 5 claimants: +919999999999
+CLM-2026-002004,SHARED_CONTACT,HIGH,30,Phone number shared by 5 claimants: +919999999999
+CLM-2026-002005,SHARED_CONTACT,HIGH,30,Phone number shared by 5 claimants: +919999999999
+CLM-2026-002259,SHARED_CONTACT,HIGH,30,Phone number shared by 5 claimants: +919999999999
+CLM-2026-002613,SHARED_CONTACT,HIGH,30,Phone number shared by 5 claimants: +919999999999
+CLM-2026-003216,SHARED_CONTACT,HIGH,30,Phone number shared by 5 claimants: +919999999999
+CLM-2026-003264,SHARED_CONTACT,HIGH,30,Phone number shared by 5 claimants: +919999999999
+CLM-2026-003459,SHARED_CONTACT,HIGH,30,Phone number shared by 5 claimants: +919999999999
+CLM-2026-003617,SHARED_CONTACT,HIGH,30,Phone number shared by 5 claimants: +919999999999
+CLM-2026-003650,SHARED_CONTACT,HIGH,30,Phone number shared by 5 claimants: +919999999999
+CLM-2026-003696,SHARED_CONTACT,HIGH,30,Phone number shared by 5 claimants: +919999999999
+CLM-2026-004001,SHARED_CONTACT,HIGH,30,Phone number shared by 5 claimants: +919999999999
+CLM-2026-004002,SHARED_CONTACT,HIGH,30,Phone number shared by 5 claimants: +919999999999
+CLM-2026-004003,SHARED_CONTACT,HIGH,30,Phone number shared by 5 claimants: +919999999999
+CLM-2026-004004,SHARED_CONTACT,HIGH,30,Phone number shared by 5 claimants: +919999999999
+CLM-2026-004005,SHARED_CONTACT,HIGH,30,Phone number shared by 5 claimants: +919999999999
+CLM-2026-004259,SHARED_CONTACT,HIGH,30,Phone number shared by 5 claimants: +919999999999
+CLM-2026-004613,SHARED_CONTACT,HIGH,30,Phone number shared by 5 claimants: +919999999999
+CLM-2026-000006,REPEATED_NARRATIVE,HIGH,25,Incident narrative repeated across multiple claimants.
+CLM-2026-000007,REPEATED_NARRATIVE,HIGH,25,Incident narrative repeated across multiple claimants.
+CLM-2026-000008,REPEATED_NARRATIVE,HIGH,25,Incident narrative repeated across multiple claimants.
+CLM-2026-000009,REPEATED_NARRATIVE,HIGH,25,Incident narrative repeated across multiple claimants.
+CLM-2026-000010,REPEATED_NARRATIVE,HIGH,25,Incident narrative repeated across multiple claimants.
+CLM-2026-003296,UNUSUAL_TIMING,MEDIUM,20,"Claim is part of a coordinated five-claim sequence with consecutive incident dates, consecutive claim dates, one-day incident-to-claim delays, and distinct claimants and providers."
+CLM-2026-002399,UNUSUAL_TIMING,MEDIUM,20,"Claim is part of a coordinated five-claim sequence with consecutive incident dates, consecutive claim dates, one-day incident-to-claim delays, and distinct claimants and providers."
+CLM-2026-003952,UNUSUAL_TIMING,MEDIUM,20,"Claim is part of a coordinated five-claim sequence with consecutive incident dates, consecutive claim dates, one-day incident-to-claim delays, and distinct claimants and providers."
+CLM-2026-004928,UNUSUAL_TIMING,MEDIUM,20,"Claim is part of a coordinated five-claim sequence with consecutive incident dates, consecutive claim dates, one-day incident-to-claim delays, and distinct claimants and providers."
+CLM-2026-003532,UNUSUAL_TIMING,MEDIUM,20,"Claim is part of a coordinated five-claim sequence with consecutive incident dates, consecutive claim dates, one-day incident-to-claim delays, and distinct claimants and providers."
+CLM-2026-000011,UNUSUAL_TIMING,MEDIUM,20,"Claim is part of a coordinated five-claim sequence with consecutive incident dates, consecutive claim dates, one-day incident-to-claim delays, and distinct claimants and providers."
+CLM-2026-000012,UNUSUAL_TIMING,MEDIUM,20,"Claim is part of a coordinated five-claim sequence with consecutive incident dates, consecutive claim dates, one-day incident-to-claim delays, and distinct claimants and providers."
+CLM-2026-000013,UNUSUAL_TIMING,MEDIUM,20,"Claim is part of a coordinated five-claim sequence with consecutive incident dates, consecutive claim dates, one-day incident-to-claim delays, and distinct claimants and providers."
+CLM-2026-000014,UNUSUAL_TIMING,MEDIUM,20,"Claim is part of a coordinated five-claim sequence with consecutive incident dates, consecutive claim dates, one-day incident-to-claim delays, and distinct claimants and providers."
+CLM-2026-000015,UNUSUAL_TIMING,MEDIUM,20,"Claim is part of a coordinated five-claim sequence with consecutive incident dates, consecutive claim dates, one-day incident-to-claim delays, and distinct claimants and providers."
+CLM-2026-000016,PROVIDER_CONCENTRATION,MEDIUM,20,"Provider PRV-000001 services 20 claims, which is at least 2x the median provider claim count (10)."
+CLM-2026-000017,PROVIDER_CONCENTRATION,MEDIUM,20,"Provider PRV-000001 services 20 claims, which is at least 2x the median provider claim count (10)."
+CLM-2026-000018,PROVIDER_CONCENTRATION,MEDIUM,20,"Provider PRV-000001 services 20 claims, which is at least 2x the median provider claim count (10)."
+CLM-2026-000019,PROVIDER_CONCENTRATION,MEDIUM,20,"Provider PRV-000001 services 20 claims, which is at least 2x the median provider claim count (10)."
+CLM-2026-000020,PROVIDER_CONCENTRATION,MEDIUM,20,"Provider PRV-000001 services 20 claims, which is at least 2x the median provider claim count (10)."
+CLM-2026-000021,PROVIDER_CONCENTRATION,MEDIUM,20,"Provider PRV-000001 services 20 claims, which is at least 2x the median provider claim count (10)."
+CLM-2026-000022,PROVIDER_CONCENTRATION,MEDIUM,20,"Provider PRV-000001 services 20 claims, which is at least 2x the median provider claim count (10)."
+CLM-2026-000023,PROVIDER_CONCENTRATION,MEDIUM,20,"Provider PRV-000001 services 20 claims, which is at least 2x the median provider claim count (10)."
+CLM-2026-000024,PROVIDER_CONCENTRATION,MEDIUM,20,"Provider PRV-000001 services 20 claims, which is at least 2x the median provider claim count (10)."
+CLM-2026-000025,PROVIDER_CONCENTRATION,MEDIUM,20,"Provider PRV-000001 services 20 claims, which is at least 2x the median provider claim count (10)."
+CLM-2026-000226,PROVIDER_CONCENTRATION,MEDIUM,20,"Provider PRV-000001 services 20 claims, which is at least 2x the median provider claim count (10)."
+CLM-2026-000726,PROVIDER_CONCENTRATION,MEDIUM,20,"Provider PRV-000001 services 20 claims, which is at least 2x the median provider claim count (10)."
+CLM-2026-001226,PROVIDER_CONCENTRATION,MEDIUM,20,"Provider PRV-000001 services 20 claims, which is at least 2x the median provider claim count (10)."
+CLM-2026-001726,PROVIDER_CONCENTRATION,MEDIUM,20,"Provider PRV-000001 services 20 claims, which is at least 2x the median provider claim count (10)."
+CLM-2026-002226,PROVIDER_CONCENTRATION,MEDIUM,20,"Provider PRV-000001 services 20 claims, which is at least 2x the median provider claim count (10)."
+CLM-2026-002726,PROVIDER_CONCENTRATION,MEDIUM,20,"Provider PRV-000001 services 20 claims, which is at least 2x the median provider claim count (10)."
+CLM-2026-003226,PROVIDER_CONCENTRATION,MEDIUM,20,"Provider PRV-000001 services 20 claims, which is at least 2x the median provider claim count (10)."
+CLM-2026-003726,PROVIDER_CONCENTRATION,MEDIUM,20,"Provider PRV-000001 services 20 claims, which is at least 2x the median provider claim count (10)."
+CLM-2026-004226,PROVIDER_CONCENTRATION,MEDIUM,20,"Provider PRV-000001 services 20 claims, which is at least 2x the median provider claim count (10)."
+CLM-2026-004726,PROVIDER_CONCENTRATION,MEDIUM,20,"Provider PRV-000001 services 20 claims, which is at least 2x the median provider claim count (10)."
+CLM-2026-000001,PAYMENT_EXCEEDS_APPROVED,CRITICAL,40,Controlled edge case: payment intentionally exceeds approved claim amount.
+CLM-2026-000001,DUPLICATE_INVOICE,HIGH,35,Controlled edge case: invoice intentionally reused across different claimants.
